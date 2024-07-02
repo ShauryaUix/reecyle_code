@@ -180,7 +180,7 @@ const WrapperWithAnimation: React.FC<WrapperWithAnimationProps> = ({
 				if (
 					onPullDown &&
 					((wrapperRef.current && wrapperRef.current.scrollTop < -90) ||
-						touchRef.current.velocity || 21 > 20) //fix here
+						touchRef.current.velocity || 21> 20) //fix here
 				) {
 					onPullDown();
 				}
