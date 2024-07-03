@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 interface ParagraphProps {
-  color?: 'brand' | 'dark' | 'light';
-  customColor?: string;
-  fontWeight?: number;
-  fontSize?: number;
-  opacity?: number;
+  color?: 'brand' | 'dark' | 'light'
+  customColor?: string
+  fontWeight?: number
+  fontSize?: number
+  opacity?: number
 }
 
 const Paragraph = styled.p<ParagraphProps>`
@@ -16,7 +16,7 @@ const Paragraph = styled.p<ParagraphProps>`
   font-weight: ${({ fontWeight = 500 }) => fontWeight};
   opacity: ${({ opacity = 1 }) => opacity};
   white-space: pre-wrap;
-`;
+`
 
 Paragraph.defaultProps = {
   color: 'dark',
@@ -24,6 +24,6 @@ Paragraph.defaultProps = {
   fontWeight: 500,
   fontSize: 14,
   opacity: 1,
-};
+}
 
-export default Paragraph;
+export default Paragraph

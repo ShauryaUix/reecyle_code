@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 interface TitleProps {
-  color?: 'brand' | 'dark' | 'light';
-  customColor?: string;
-  fontWeight?: number;
-  fontSize?: number;
-  opacity?: number;
+  color?: 'brand' | 'dark' | 'light'
+  customColor?: string
+  fontWeight?: number
+  fontSize?: number
+  opacity?: number
 }
 
 const Title = styled.h2<TitleProps>`
@@ -15,7 +15,7 @@ const Title = styled.h2<TitleProps>`
   font-size: ${({ fontSize = 28 }) => fontSize}px;
   font-weight: ${({ fontWeight = 900 }) => fontWeight};
   opacity: ${({ opacity = 1 }) => opacity};
-`;
+`
 
 Title.defaultProps = {
   color: 'dark',
@@ -23,6 +23,6 @@ Title.defaultProps = {
   fontWeight: 900,
   fontSize: 28,
   opacity: 1,
-};
+}
 
-export default Title;
+export default Title
